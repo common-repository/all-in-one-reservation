@@ -1,0 +1,1823 @@
+.date-picker {
+	width: 170px;
+	height: 25px;
+	padding: 0;
+	border: 0;
+	line-height: 25px;
+	padding-left: 10px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+	cursor: pointer;
+	color: #303030;
+	position: relative;
+	z-index: 2
+}
+
+.date-picker-wrapper {
+	position: absolute;
+	z-index: 1;
+	font-size: 12px;
+	line-height: 20px;
+	color: #aaa;
+	font-family: Arial, sans-serif;
+	box-sizing: initial
+}
+
+.dp-clearfix {
+	clear: both;
+	height: 0;
+	font-size: 0
+}
+
+.date-picker-wrapper.inline-wrapper {
+	position: relative;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display: inline-block
+}
+
+.date-picker-wrapper.single-date {
+	width: auto
+}
+
+.date-picker-wrapper.no-shortcuts {
+	padding-bottom: 12px
+}
+
+.date-picker-wrapper.no-topbar {
+	padding-top: 12px
+}
+
+.date-picker-wrapper .footer {
+	font-size: 11px;
+	padding-top: 3px
+}
+
+.date-picker-wrapper b {
+	color: #666;
+	font-weight: 700
+}
+
+.date-picker-wrapper a {
+	color: #6bb4d6;
+	text-decoration: underline
+}
+
+.date-picker-wrapper .month-name {
+	text-transform: uppercase
+}
+
+.date-picker-wrapper .select-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.date-picker-wrapper .select-wrapper:hover {
+	text-decoration: underline
+}
+
+.date-picker-wrapper .month-element {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.date-picker-wrapper .select-wrapper select {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: -1px;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	color: inherit;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: 0 0;
+	border: 0;
+	outline: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+	opacity: .01
+}
+
+.date-picker-wrapper .month-wrapper {
+	cursor: default;
+	position: relative;
+	overflow: hidden
+}
+
+.date-picker-wrapper .month-wrapper table {
+	width: 100%;
+	float: left;
+	margin: 0;
+}
+
+.date-picker-wrapper .month-wrapper table.month2 {
+	width: 190px;
+	float: left
+}
+
+.date-picker-wrapper .month-wrapper table td,
+.date-picker-wrapper .month-wrapper table th {
+	vertical-align: middle;
+	text-align: center;
+	line-height: 14px;
+	margin: 0;
+}
+
+.date-picker-wrapper .month-wrapper table div.day.lastMonth,
+.date-picker-wrapper .month-wrapper table div.day.nextMonth {
+	color: #999;
+	cursor: default
+}
+
+.date-picker-wrapper .month-wrapper table .day.checked {
+	background-color: #9cdbf7
+}
+
+.date-picker-wrapper .month-wrapper table .week-name {
+	height: 20px;
+	line-height: 20px;
+	font-weight: 100;
+	text-transform: uppercase
+}
+
+.date-picker-wrapper .month-wrapper table .day.has-tooltip {
+	cursor: help!important
+}
+
+.date-picker-wrapper .month-wrapper table .day.has-tooltip .tooltip {
+	white-space: nowrap
+}
+
+.date-picker-wrapper .time label {
+	white-space: nowrap
+}
+
+.date-picker-wrapper .month-wrapper table .day.toMonth.valid {
+	color: #222;
+	cursor: pointer
+}
+
+.date-picker-wrapper .month-wrapper table .day.toMonth.hovering {
+	background-color: #cdecfa
+}
+
+.date-picker-wrapper .month-wrapper table .day.lastMonth,
+.date-picker-wrapper .month-wrapper table .day.nextMonth {
+	display: none
+}
+
+.month-wrapper table .day {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.date-picker-wrapper table .caption {
+	height: 85px
+}
+
+.date-picker-wrapper .gap {
+	position: relative;
+	z-index: 1;
+	width: 15px;
+	height: 100%;
+	background-color: red;
+	font-size: 0;
+	line-height: 0;
+	float: left;
+	top: -5px;
+	margin: 0 10px -10px;
+	visibility: hidden;
+	height: 0
+}
+
+.date-picker-wrapper .gap .gap-lines {
+	height: 100%;
+	overflow: hidden
+}
+
+.date-picker-wrapper .gap .gap-line {
+	height: 15px;
+	width: 15px;
+	position: relative
+}
+
+.date-picker-wrapper .gap .gap-line .gap-1 {
+	z-index: 1;
+	height: 0;
+	border-left: 8px solid #fff;
+	border-top: 8px solid #eee;
+	border-bottom: 8px solid #eee
+}
+
+.date-picker-wrapper .gap .gap-line .gap-2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-top: 8px solid #fff
+}
+
+.date-picker-wrapper .gap .gap-line .gap-3 {
+	position: absolute;
+	right: 0;
+	top: 8px;
+	z-index: 2;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-bottom: 8px solid #fff
+}
+
+.date-picker-wrapper .gap .gap-top-mask {
+	width: 6px;
+	height: 1px;
+	position: absolute;
+	top: -1px;
+	left: 1px;
+	background-color: #eee;
+	z-index: 3
+}
+
+.date-picker-wrapper .gap .gap-bottom-mask {
+	width: 6px;
+	height: 1px;
+	position: absolute;
+	bottom: -1px;
+	left: 7px;
+	background-color: #eee;
+	z-index: 3
+}
+
+.date-picker-wrapper .selected-days {
+	display: none
+}
+
+.date-picker-wrapper .drp_top-bar {
+	line-height: 1.4;
+	position: relative;
+	display: none;
+}
+
+.date-picker-wrapper .drp_top-bar .error-top,
+.date-picker-wrapper .drp_top-bar .normal-top {
+	display: none
+}
+
+.date-picker-wrapper .drp_top-bar .default-top {
+	display: block
+}
+
+.date-picker-wrapper .drp_top-bar.error .default-top {
+	display: none
+}
+
+.date-picker-wrapper .drp_top-bar.error .error-top {
+	display: block;
+	color: red
+}
+
+.date-picker-wrapper .drp_top-bar.normal .default-top {
+	display: none
+}
+
+.date-picker-wrapper .drp_top-bar.normal .normal-top {
+	display: block
+}
+
+.date-picker-wrapper .drp_top-bar.normal .normal-top .selection-top {
+	color: #333
+}
+
+.date-picker-wrapper .drp_top-bar .apply-btn {
+	position: absolute;
+	right: 0;
+	top: 6px;
+	padding: 3px 5px;
+	margin: 0;
+	font-size: 12px;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #d9eef7;
+	border: solid 1px #0076a3;
+	background: #0095cd;
+	background: -moz-linear-gradient(top, #00adee, #0078a5);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+	color: #fff;
+	line-height: initial
+}
+
+.date-picker-wrapper .drp_top-bar .apply-btn.disabled {
+	cursor: pointer;
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -moz-linear-gradient(top, #fff, #ededed);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed')
+}
+
+.date-picker-wrapper .time {
+	position: relative
+}
+
+.date-picker-wrapper.single-month .time {
+	display: block
+}
+
+.date-picker-wrapper .time input[type=range] {
+	vertical-align: middle;
+	width: 129px;
+	padding: 0;
+	margin: 0;
+	height: 20px
+}
+
+.date-picker-wrapper .time1 {
+	width: 180px;
+	padding: 0 5px;
+	text-align: center
+}
+
+.time2 {
+	width: 180px;
+	padding: 0 5px;
+	text-align: center
+}
+
+.date-picker-wrapper .time1 {
+	float: left
+}
+
+.date-picker-wrapper .time2 {
+	float: right
+}
+
+.date-picker-wrapper .hour {
+	text-align: right
+}
+
+.minute {
+	text-align: right
+}
+
+.date-picker-wrapper .hide {
+	display: none
+}
+
+.date-picker-wrapper .date-range-length-tip {
+	position: absolute;
+	margin-top: -4px;
+	margin-left: -8px;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+	display: none;
+	background-color: #ff0;
+	padding: 0 6px;
+	border-radius: 2px;
+	font-size: 12px;
+	line-height: 16px;
+	-webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, .3));
+	-moz-filter: drop-shadow(0 0 3px rgba(0, 0, 0, .3));
+	-ms-filter: drop-shadow(0 0 3px rgba(0, 0, 0, .3));
+	-o-filter: drop-shadow(0 0 3px rgba(0, 0, 0, .3));
+	filter: drop-shadow(0 0 3px rgba(0, 0, 0, .3))
+}
+
+.date-picker-wrapper .date-range-length-tip:after {
+	content: '';
+	position: absolute;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #ff0;
+	left: 50%;
+	margin-left: -4px;
+	bottom: -4px
+}
+
+.date-picker-wrapper.two-months.no-gap .month1 .next,
+.date-picker-wrapper.two-months.no-gap .month2 .prev {
+	display: none
+}
+
+.date-picker-wrapper .week-number {
+	padding: 5px 0;
+	line-height: 1;
+	font-size: 12px;
+	margin-bottom: 1px;
+	color: #999;
+	cursor: pointer
+}
+
+.date-picker-wrapper .week-number.week-number-selected {
+	color: #49e;
+	font-weight: 700
+}
+
+
+/* ======================= Theme 1 ======================= */
+
+.aior_cftheme_1 table {
+	border-radius: 10px;
+	border: 1px solid #fcfafa !important;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_1 tbody {
+	background: #fff;
+}
+
+.aior_cftheme_1 table .caption {
+	background: #1a363f;
+}
+
+.aior_cftheme_1 table .caption th {
+	color: #fff;
+	padding: 20px 0;
+}
+
+.aior_cftheme_1 .week-name {
+	background: #fe623f;
+}
+
+.aior_cftheme_1 .week-name th {
+	padding: 15px 10px;
+	color: #fff;
+}
+
+.aior_cftheme_1 .month-wrapper table th {
+	border: none !important;
+}
+
+.aior_cftheme_1 .month-wrapper table td {
+	border: 1px solid #f1f1f1 !important;
+}
+
+.aior_cftheme_1 table .caption .next,
+.aior_cftheme_1 table .caption .prev {
+	cursor: pointer;
+	background-color: #152d34;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 50px;
+	text-align: center;
+}
+
+.aior_cftheme_1 table .caption .next:hover,
+.aior_cftheme_1 table .caption .prev:hover {
+	background-color: #fe623f;
+}
+
+.aior_cftheme_1 table .caption .prev svg>path,
+.aior_cftheme_1 table .caption .next svg>path {
+	fill: #FFF;
+}
+
+.aior_cftheme_1 .month-wrapper table .day.real-today.checked,
+.aior_cftheme_1 .month-wrapper table .day.real-today.hovering {
+	background-color: #fab1a0;
+	border-radius: 50%;
+}
+
+.aior_cftheme_1 .first-date-selected,
+.aior_cftheme_1 .last-date-selected,
+.aior_cftheme_1 .month-wrapper table .day.real-today {
+	background-color: #fe623f !important;
+	color: #fff!important;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.aior_cftheme_1 .book-apppointment-now {
+	background-color: #fab1a0 !important;
+}
+
+.aior_cftheme_1 .book-apppointment-now:hover {
+	background-color: #fe623f !important;
+}
+
+.aior_cftheme_1 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	margin-bottom: 1px;
+	color: #bbb;
+	cursor: default;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_1 .sol_ap_s_date header {
+	background: #ffded6;
+}
+
+
+/* ======================= Theme 2 ======================= */
+
+.aior_cftheme_2 table {
+	border: none !important;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_2 tbody {
+	background: #fff;
+}
+
+.aior_cftheme_2 table .caption {
+	background: #fff;
+}
+
+.aior_cftheme_2 table .caption th {
+	color: #30a293;
+	padding: 20px 0;
+}
+
+.aior_cftheme_2 .week-name {
+	background: #fff;
+}
+
+.aior_cftheme_2 .week-name th {
+	padding: 15px 10px;
+	color: #e33d6a;
+}
+
+.aior_cftheme_2 .month-wrapper table th {
+	border: none !important;
+}
+
+.aior_cftheme_2 .month-wrapper table td {
+	border: 1px solid #f1f1f1 !important;
+}
+
+.aior_cftheme_2 table .caption .next,
+.aior_cftheme_2 table .caption .prev {
+	cursor: pointer;
+	background-color: #f1f1f1;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 55px;
+	text-align: center;
+}
+
+.aior_cftheme_2 table .caption .next:hover,
+.aior_cftheme_2 table .caption .prev:hover {
+	background-color: #ddd;
+}
+
+.aior_cftheme_2 .month-wrapper table .day.real-today.checked,
+.aior_cftheme_2 .month-wrapper table .day.real-today.hovering {
+	background-color: #30a293;
+	border-radius: 50%;
+}
+
+.aior_cftheme_2 .book-apppointment-now {
+	background-color: #6dcec1 !important;
+}
+
+.aior_cftheme_2 .book-apppointment-now:hover {
+	background-color: #30a293 !important;
+}
+
+.aior_cftheme_2 .first-date-selected,
+.aior_cftheme_2 .last-date-selected,
+.aior_cftheme_2 .month-wrapper table .day.real-today {
+	background-color: #fff !important;
+	color: #222 !important;
+	border-radius: 50%;
+	font-weight: bold;
+	border: 4px solid #e33d6a;
+}
+
+.aior_cftheme_2 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	margin-bottom: 1px;
+	color: #bbb;
+	cursor: default;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_2 .sol_ap_s_date header {
+	background: #ffded6;
+}
+
+.aior_cftheme_2 table .caption .prev svg>path,
+.aior_cftheme_2 table .caption .next svg>path {
+	fill: #30a293;
+}
+
+
+/* ======================= Theme 3 ======================= */
+
+.aior_cftheme_3 table {
+	border: none !important;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_3 tbody {
+	background: #fff;
+}
+
+.aior_cftheme_3 table .caption {
+	background: #fff;
+}
+
+.aior_cftheme_3 table .caption th {
+	background: #f1f1f1;
+	color: #222;
+	padding: 20px 0;
+}
+
+.aior_cftheme_3 table .caption .prev,
+.aior_cftheme_3 table .caption .next {
+	color: #fff;
+}
+
+.aior_cftheme_3 .week-name {
+	background: #fff;
+}
+
+.aior_cftheme_3 .week-name th {
+	padding: 15px 10px;
+	color: #2699d2;
+}
+
+.aior_cftheme_3 .month-wrapper table th {
+	border: none !important;
+}
+
+.aior_cftheme_3 .month-wrapper table td {
+	border: 1px dashed #53aacf !important
+}
+
+.aior_cftheme_3 table .caption .next,
+.aior_cftheme_3 table .caption .prev {
+	cursor: pointer;
+	background-color: #2699d2;
+	border-radius: 15px;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+}
+
+.aior_cftheme_3 table .caption .next:hover,
+.aior_cftheme_3 table .caption .prev:hover {
+	background-color: #ddd;
+}
+
+.aior_cftheme_3 .month-wrapper table .day.real-today.hovering {
+	background: #8cd8fe !important;
+	border-radius: 50%;
+}
+
+.aior_cftheme_3 .book-apppointment-now {
+	background-color: #ddd !important;
+}
+
+.aior_cftheme_3 .book-apppointment-now:hover {
+	background-color: #8cd8fe !important;
+}
+
+.aior_cftheme_3 .first-date-selected,
+.aior_cftheme_3 .last-date-selected,
+.aior_cftheme_3 .month-wrapper table .day.real-today {
+	color: #fff !important;
+	border-radius: 50%;
+	font-weight: bold;
+	background-color: #2699d2 !important;
+}
+
+.aior_cftheme_3 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.2rem;
+	margin-bottom: 1px;
+	color: #bbb;
+	cursor: default;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_3 .sol_ap_s_date header {
+	background: #8cd8fe;
+}
+
+.aior_cftheme_3 table .caption .prev svg>path,
+.aior_cftheme_3 table .caption .next svg>path {
+	fill: #FFF;
+}
+
+
+/* ======================= Theme 4 ======================= */
+
+.aior_cftheme_4 table {
+	border-radius: 20px;
+	border: none;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_4 tbody {
+	background: #fff;
+}
+
+.aior_cftheme_4 table .caption {
+	background: #fff;
+}
+
+.aior_cftheme_4 table .caption th {
+	color: #222;
+	padding: 20px 0;
+}
+
+.aior_cftheme_4 .week-name {
+	background: #fff;
+}
+
+.aior_cftheme_4 .week-name th {
+	padding: 15px 10px;
+	color: #bbb;
+	text-transform: capitalize;
+}
+
+.aior_cftheme_4 .month-wrapper table th {
+	border: none !important;
+}
+
+.aior_cftheme_4 .month-wrapper table td {
+	border: none !important;
+}
+
+.aior_cftheme_4 table .caption .next,
+.aior_cftheme_4 table .caption .prev {
+	cursor: pointer;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 55px;
+	text-align: center;
+}
+
+.aior_cftheme_4 table .caption .next:hover,
+.aior_cftheme_4 table .caption .prev:hover {
+	background-color: #f1f1f1;
+}
+
+.aior_cftheme_4 .month-wrapper table .day.real-today.checked,
+.aior_cftheme_4 .month-wrapper table .day.real-today.hovering {
+	background-color: #8f8ff3;
+	border-radius: 50%;
+}
+
+.aior_cftheme_4 .book-apppointment-now {
+	background-color: #8f8ff3 !important;
+}
+
+.aior_cftheme_4 .book-apppointment-now:hover {
+	background-color: #6262d1 !important;
+}
+
+.aior_cftheme_4 .first-date-selected,
+.aior_cftheme_4 .last-date-selected,
+.aior_cftheme_4 .month-wrapper table .day.real-today {
+	background-color: #0102fc !important;
+	color: #fff !important;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.aior_cftheme_4 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	margin-bottom: 1px;
+	color: #bbb;
+	cursor: default;
+	font-weight: bold;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_4 .sol_ap_s_date header {
+	background: #c4c4ff;
+}
+
+@media only screen and (max-width:710px) {
+	.aior_cftheme_1 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 1.5rem;
+		margin-bottom: 1px;
+		color: #bbb;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.date-picker-wrapper .month-wrapper table td,
+	.date-picker-wrapper .month-wrapper table th {
+		vertical-align: middle;
+		text-align: center;
+		line-height: 14px;
+		margin: 0;
+		padding: 0px;
+	}
+	.aior_cftheme_2 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 1.5rem;
+		margin-bottom: 1px;
+		color: #bbb;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_3 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 1.2rem;
+		margin-bottom: 1px;
+		color: #bbb;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_4 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 1.5rem;
+		margin-bottom: 1px;
+		color: #bbb;
+		cursor: default;
+		font-weight: bold;
+		height: 40px;
+		width: 40px;
+	}
+}
+
+
+/* ======================= Theme 5 ======================= */
+
+.aior_cftheme_5 table {
+	border-radius: 10px;
+	border: 1px solid #fcfafa !important;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_5 tbody {
+	background: #000;
+}
+
+.aior_cftheme_5 table .caption th {
+	color: #fff !important;
+	padding: 20px 0;
+	background-image: linear-gradient(#0e1614, #294b45) !important;
+	font-size: 24px;
+}
+
+.aior_cftheme_5 .week-name th {
+	background: #000 !important;
+}
+
+.aior_cftheme_5 .week-name th {
+	padding: 15px 10px;
+	color: #fff;
+}
+
+.aior_cftheme_5 .week-name th:hover {
+	color: #3fd5b7;
+}
+
+.aior_cftheme_5 .month-wrapper table .caption th {
+	border: 2px solid #9caca7 !important;
+}
+
+.aior_cftheme_5 .month-wrapper table td,
+.aior_cftheme_5 .month-wrapper table .week-name th {
+	border: none;
+}
+
+.aior_cftheme_5 table .caption .next,
+.aior_cftheme_5 table .caption .prev {
+	cursor: pointer;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+}
+
+.aior_cftheme_5 table .caption .next:hover,
+.aior_cftheme_5 table .caption .prev:hover {
+	border: 2px solid #3fd5b7;
+}
+
+.aior_cftheme_5 .first-date-selected,
+.aior_cftheme_5 .last-date-selected,
+.aior_cftheme_5 .month-wrapper table .day.real-today {
+	background-image: linear-gradient(#38d4a5, #3fd5b7) !important;
+	color: #fff!important;
+	border-radius: 15%;
+	font-weight: bold;
+}
+
+.aior_cftheme_5 .book-apppointment-now {
+	background: linear-gradient(#38d4a5, #3fd5b7) !important;
+	color: white !important;
+	font-weight: bold;
+}
+
+.aior_cftheme_5 .book-apppointment-now:hover {
+	color: #000 !important;
+	background: linear-gradient(#fdfffe, #cff1eb) !important;
+}
+
+.aior_cftheme_5 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	margin-bottom: 1px;
+	color: #9caca7;
+	cursor: default;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_5 .sol_ap_s_date header {
+	background: #535252;
+	border-bottom: 2px solid black !important;
+	color: #fff;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.aior_cftheme_5 .date-picker-wrapper .month-wrapper table .day.toMonth.valid {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.aior_cftheme_5 .date-picker-wrapper .month-wrapper table .day.toMonth.hovering {
+	background-color: #4ed3b88f;
+	color: rgb(255, 255, 255);
+}
+
+.aior_cftheme_5 .date-picker-wrapper .month-wrapper {
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+.aior_cftheme_5 .date-picker-wrapper .month-wrapper table .week-name {
+	height: 45px;
+	line-height: 20px;
+	font-weight: 100;
+	text-transform: uppercase
+}
+
+.aior_cftheme_5 span.prev,
+.aior_cftheme_5 span.next {
+	font-size: 32px;
+	color: #9caca7;
+}
+
+.aior_cftheme_5 table .caption .prev svg>path,
+.aior_cftheme_5 table .caption .next svg>path {
+	fill: #FFF;
+}
+
+
+/* ======================= Theme 6 ======================= */
+
+.aior_cftheme_6 table {
+	border-radius: 10px;
+	border: 1px solid #fcfafa !important;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_6 tbody {
+	background: #000;
+}
+
+.aior_cftheme_6 table .caption th {
+	color: #fff !important;
+	padding: 20px 0;
+	background-image: linear-gradient(#000000, #181b3a) !important;
+	font-size: 24px;
+}
+
+.aior_cftheme_6 .week-name th {
+	background: #000 !important;
+}
+
+.aior_cftheme_6 .week-name th {
+	padding: 15px 10px;
+	color: #fff;
+}
+
+.aior_cftheme_6 .week-name th:hover {
+	color: #3f4ed5;
+}
+
+.aior_cftheme_6 .month-wrapper table th {
+	border: none !important;
+}
+
+.aior_cftheme_6 .month-wrapper table td {
+	border: none;
+}
+
+.aior_cftheme_6 table .caption .next,
+.aior_cftheme_6 table .caption .prev {
+	cursor: pointer;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+}
+
+.aior_cftheme_6 table .caption .next:hover,
+.aior_cftheme_6 table .caption .prev:hover {
+	border: 2px solid #3f4ed5;
+}
+
+.aior_cftheme_6 .first-date-selected,
+.aior_cftheme_6 .last-date-selected,
+.aior_cftheme_6 .month-wrapper table .day.real-today {
+	background-image: linear-gradient(#1727b5, #3f4ed5) !important;
+	color: #fff!important;
+	border-radius: 15%;
+	font-weight: bold;
+}
+
+.aior_cftheme_6 .book-apppointment-now {
+	background: linear-gradient(#1727b5, #3f4ed5) !important;
+	color: white !important;
+	font-weight: bold;
+}
+
+.aior_cftheme_6 .book-apppointment-now:hover {
+	color: #000 !important;
+	background: linear-gradient(#fdfffe, #3f4ed5) !important;
+}
+
+.aior_cftheme_6 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	margin-bottom: 1px;
+	color: #9caca7;
+	cursor: default;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_6 .sol_ap_s_date header {
+	background: #535252;
+	border-bottom: 2px solid black !important;
+	color: #fff;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.aior_cftheme_6 .date-picker-wrapper .month-wrapper table .day.toMonth.valid {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.aior_cftheme_6 .date-picker-wrapper .month-wrapper table .day.toMonth.hovering {
+	background-color: #3f4ed580;
+	color: rgb(255, 255, 255);
+}
+
+.aior_cftheme_6 .date-picker-wrapper .month-wrapper {
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+.aior_cftheme_6 .date-picker-wrapper .month-wrapper table .week-name {
+	height: 45px;
+	line-height: 20px;
+	font-weight: 100;
+	text-transform: uppercase
+}
+
+.aior_cftheme_6 span.prev,
+.aior_cftheme_6 span.next {
+	font-size: 32px;
+	color: #f2f4f9;
+	font-weight: 300px;
+}
+
+.aior_cftheme_6 table .caption .prev svg>path,
+.aior_cftheme_6 table .caption .next svg>path {
+	fill: #FFF;
+}
+
+
+/* ======================= Theme 7 ======================= */
+
+.aior_cftheme_7 table {
+	border-radius: 10px;
+	border: 1px solid #fcfafa !important;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_7 tbody {
+	background: #000;
+}
+
+.aior_cftheme_7 table .caption th {
+	color: #fff !important;
+	padding: 20px 0;
+	background-image: linear-gradient(180deg, #000000, #35220d) !important;
+	font-size: 24px;
+}
+
+.aior_cftheme_7 .week-name th {
+	background: #000 !important;
+}
+
+.aior_cftheme_7 .week-name th {
+	padding: 15px 10px;
+	color: #fff;
+}
+
+.aior_cftheme_7 .week-name th:hover {
+	color: #d1852e;
+}
+
+.aior_cftheme_7 .month-wrapper table th {
+	border: none !important;
+}
+
+.aior_cftheme_7 .month-wrapper table td {
+	border: none;
+}
+
+.aior_cftheme_7 table .caption .next,
+.aior_cftheme_7 table .caption .prev {
+	cursor: pointer;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+}
+
+.aior_cftheme_7 table .caption .next:hover,
+.aior_cftheme_7 table .caption .prev:hover {
+	border: 2px solid #d1852e;
+}
+
+.aior_cftheme_7 .first-date-selected,
+.aior_cftheme_7 .last-date-selected,
+.aior_cftheme_7 .month-wrapper table .day.real-today {
+	background-image: linear-gradient(#c98c1b, #d1852e) !important;
+	color: #fff!important;
+	border-radius: 15%;
+	font-weight: bold;
+}
+
+.aior_cftheme_7 .book-apppointment-now {
+	background: linear-gradient(#c98c1b, #d1852e) !important;
+	color: white !important;
+	font-weight: bold;
+}
+
+.aior_cftheme_7 .book-apppointment-now:hover {
+	color: #000 !important;
+	background: linear-gradient(#fdfffe, #ebcd65) !important;
+}
+
+.aior_cftheme_7 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	margin-bottom: 1px;
+	color: #9caca7;
+	cursor: default;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_7 .sol_ap_s_date header {
+	background: #535252;
+	border-bottom: 2px solid black !important;
+	color: #fff;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.aior_cftheme_7 .date-picker-wrapper .month-wrapper table .day.toMonth.valid {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.aior_cftheme_7 .date-picker-wrapper .month-wrapper table .day.toMonth.hovering {
+	background-color: #35220d;
+	color: rgb(255, 255, 255);
+}
+
+.aior_cftheme_7 .date-picker-wrapper .month-wrapper {
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+.aior_cftheme_7 .date-picker-wrapper .month-wrapper table .week-name {
+	height: 45px;
+	line-height: 20px;
+	font-weight: 100;
+	text-transform: uppercase
+}
+
+.aior_cftheme_7 span.prev,
+.aior_cftheme_7 span.next {
+	font-size: 32px;
+	color: #f1f8f6;
+	font-family: auto;
+}
+
+.aior_cftheme_7 table .caption .prev svg>path,
+.aior_cftheme_7 table .caption .next svg>path {
+	fill: #FFF;
+}
+
+
+/* ======================= Theme 8 ======================= */
+
+.aior_cftheme_8 table {
+	border-radius: 10px;
+	border: 1px solid #fcfafa !important;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_8 tbody {
+	background: rgb(255, 255, 255);
+}
+
+.aior_cftheme_8 table .caption th {
+	font-size: 24px;
+	color: #000 !important;
+	padding: 20px 0;
+	background-image: linear-gradient(#ffffff, #f1f8f6) !important;
+}
+
+.aior_cftheme_8 .week-name th {
+	background: #fff !important;
+}
+
+.aior_cftheme_8 .week-name th {
+	padding: 15px 10px;
+	color: #000;
+}
+
+.aior_cftheme_8 .week-name th:hover {
+	color: #3fd5b7;
+}
+
+.aior_cftheme_8 .month-wrapper table th {
+	border: none !important;
+}
+
+.aior_cftheme_8 .month-wrapper table td {
+	border: none;
+}
+
+.aior_cftheme_8 table .caption .next,
+.aior_cftheme_8 table .caption .prev {
+	cursor: pointer;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+}
+
+.aior_cftheme_8 table .caption .next:hover,
+.aior_cftheme_8 table .caption .prev:hover {
+	border: 2px solid #3fd5b7;
+}
+
+.aior_cftheme_8 .first-date-selected,
+.aior_cftheme_8 .last-date-selected,
+.aior_cftheme_8 .month-wrapper table .day.real-today {
+	background-image: linear-gradient(#38d4a5, #3fd5b7) !important;
+	color: #fff!important;
+	border-radius: 15%;
+	font-weight: bold;
+}
+
+.aior_cftheme_8 .book-apppointment-now {
+	background: linear-gradient(#38d4a5, #3fd5b7) !important;
+	color: white !important;
+	font-weight: bold;
+}
+
+.aior_cftheme_8 .book-apppointment-now:hover {
+	color: #000 !important;
+	background: linear-gradient(#fdfffe, #cff1eb) !important;
+}
+
+.aior_cftheme_8 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	margin-bottom: 1px;
+	color: #9caca7;
+	cursor: default;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_8 .sol_ap_s_date header {
+	background: #e6f8f3;
+	color: #000;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.aior_cftheme_8 .date-picker-wrapper .month-wrapper table .day.toMonth.valid {
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.aior_cftheme_8 .date-picker-wrapper .month-wrapper table .day.toMonth.hovering {
+	background-color: #f1f8f6;
+	color: #3fd5b7;
+}
+
+.aior_cftheme_8 .date-picker-wrapper .month-wrapper {
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+.aior_cftheme_8 .date-picker-wrapper .month-wrapper table .week-name {
+	height: 45px;
+	line-height: 20px;
+	font-weight: 100;
+	text-transform: uppercase
+}
+
+.aior_cftheme_8 .month-element.strong {
+	color: #3fd5b7;
+}
+
+.aior_cftheme_8 span.prev,
+.aior_cftheme_8 span.next {
+	font-size: 32px;
+	color: #9caca7;
+	font-weight: 600;
+}
+
+
+/* ======================= Theme 9 ======================= */
+
+.aior_cftheme_9 table {
+	border-radius: 10px;
+	border: 1px solid #fcfafa !important;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_9 tbody {
+	background: rgb(255, 255, 255);
+}
+
+.aior_cftheme_9 table .caption th {
+	color: #000 !important;
+	padding: 20px 0;
+	background-image: linear-gradient(#ffffff, #f2f4f9) !important;
+	font-size: 24px;
+}
+
+.aior_cftheme_9 .week-name th {
+	background: #fff !important;
+}
+
+.aior_cftheme_9 .week-name th {
+	padding: 15px 10px;
+	color: #000;
+}
+
+.aior_cftheme_9 .week-name th:hover {
+	color: #3f4ed5;
+}
+
+.aior_cftheme_9 .month-wrapper table th {
+	border: none !important;
+}
+
+.aior_cftheme_9 .month-wrapper table td {
+	border: none;
+}
+
+.aior_cftheme_9 table .caption .next,
+.aior_cftheme_9 table .caption .prev {
+	cursor: pointer;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+}
+
+.aior_cftheme_9 table .caption .next:hover,
+.aior_cftheme_9 table .caption .prev:hover {
+	border: 2px solid #3f4ed5;
+}
+
+.aior_cftheme_9 .first-date-selected,
+.aior_cftheme_9 .last-date-selected,
+.aior_cftheme_9 .month-wrapper table .day.real-today {
+	background-image: linear-gradient(#1727b5, #3f4ed5) !important;
+	color: #fff!important;
+	border-radius: 15%;
+	font-weight: bold;
+}
+
+.aior_cftheme_9 .book-apppointment-now {
+	background: linear-gradient(#1727b5, #3f4ed5) !important;
+	color: white !important;
+	font-weight: bold;
+}
+
+.aior_cftheme_9 .book-apppointment-now:hover {
+	color: #3f4ed5 !important;
+	background: linear-gradient(#f2f4f9, #cfd3fc) !important;
+}
+
+.aior_cftheme_9 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	margin-bottom: 1px;
+	color: #9caca7;
+	cursor: default;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_9 .sol_ap_s_date header {
+	background: #e8efff;
+	color: #000;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.aior_cftheme_9 .date-picker-wrapper .month-wrapper table .day.toMonth.valid {
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.aior_cftheme_9 .date-picker-wrapper .month-wrapper table .day.toMonth.hovering {
+	background-color: #f2f4f9;
+	color: #3f4ed5;
+}
+
+.aior_cftheme_9 .date-picker-wrapper .month-wrapper {
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+.aior_cftheme_9 .date-picker-wrapper .month-wrapper table .week-name {
+	height: 45px;
+	line-height: 20px;
+	font-weight: 100;
+	text-transform: uppercase
+}
+
+.aior_cftheme_9 .month-element.strong {
+	color: #3f4ed5;
+}
+
+
+/* ======================= Theme 10 ======================= */
+
+.aior_cftheme_10 table {
+	border-radius: 10px;
+	border: 1px solid #fcfafa !important;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.aior_cftheme_10 tbody {
+	background: rgb(255, 255, 255);
+}
+
+.aior_cftheme_10 table .caption th {
+	color: #000 !important;
+	padding: 20px 0;
+	background-image: linear-gradient(#ffffff, #f8f5f1) !important;
+	font-size: 24px;
+}
+
+.aior_cftheme_10 .week-name th {
+	background: #fff !important;
+}
+
+.aior_cftheme_10 .week-name th {
+	padding: 15px 10px;
+	color: #000;
+}
+
+.aior_cftheme_10 .week-name th:hover {
+	color: #d1852e;
+}
+
+.aior_cftheme_10 .month-wrapper table th {
+	border: none !important;
+}
+
+.aior_cftheme_10 .month-wrapper table td {
+	border: none;
+}
+
+.aior_cftheme_10 table .caption .next,
+.aior_cftheme_10 table .caption .prev {
+	cursor: pointer;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+}
+
+.aior_cftheme_10 table .caption .next:hover,
+.aior_cftheme_10 table .caption .prev:hover {
+	border: 2px solid #d1852e;
+}
+
+.aior_cftheme_10 .first-date-selected,
+.aior_cftheme_10 .last-date-selected,
+.aior_cftheme_10 .month-wrapper table .day.real-today {
+	background-image: linear-gradient(#c98c1b, #d1852e) !important;
+	color: #fff!important;
+	border-radius: 15%;
+	font-weight: bold;
+	border-radius: 50%;
+}
+
+.aior_cftheme_10 .book-apppointment-now {
+	background: linear-gradient(#c98c1b, #d1852e) !important;
+	color: white !important;
+	font-weight: bold;
+}
+
+.aior_cftheme_10 .book-apppointment-now:hover {
+	color: #d1852e !important;
+	background: linear-gradient(#f7f1eb, #fce6ac) !important;
+}
+
+.aior_cftheme_10 .month-wrapper table .day {
+	padding: 5px;
+	line-height: 40px;
+	font-size: 1.5rem;
+	margin-bottom: 1px;
+	color: #9caca7;
+	cursor: default;
+	height: 40px;
+	width: 40px;
+}
+
+.aior_cftheme_10 .sol_ap_s_date header {
+	background: #f7f1eb;
+	color: #000;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.aior_cftheme_10 .date-picker-wrapper .month-wrapper table .day.toMonth.valid {
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.aior_cftheme_10 .date-picker-wrapper .month-wrapper table .day.toMonth.hovering {
+	background-color: #f8f5f1;
+	color: #d1852e;
+}
+
+.aior_cftheme_10 .date-picker-wrapper .month-wrapper {
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+.aior_cftheme_10 .date-picker-wrapper .month-wrapper table .week-name {
+	height: 45px;
+	line-height: 20px;
+	font-weight: 100;
+	text-transform: uppercase
+}
+
+.aior_cftheme_10 .month-element.strong {
+	color: #d1852e;
+}
+
+@media only screen and (max-width:710px) {
+	.aior_cftheme_1 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 1.5rem;
+		margin-bottom: 1px;
+		color: #bbb;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.date-picker-wrapper .month-wrapper table td,
+	.date-picker-wrapper .month-wrapper table th {
+		vertical-align: middle;
+		text-align: center;
+		line-height: 14px;
+		margin: 0;
+		padding: 0px;
+	}
+	.aior_cftheme_2 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 1.5rem;
+		margin-bottom: 1px;
+		color: #bbb;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_3 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 1.2rem;
+		margin-bottom: 1px;
+		color: #bbb;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_4 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 1.5rem;
+		margin-bottom: 1px;
+		color: #bbb;
+		cursor: default;
+		font-weight: bold;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_5 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 20px;
+		margin-bottom: 4px;
+		color: #9caca7;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_5 span.prev,
+	.aior_cftheme_5 span.next {
+		font-size: 20px;
+		color: #9caca7;
+	}
+	.aior_cftheme_5 table .caption th {
+		font-size: 17px;
+	}
+	.aior_cftheme_6 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 20px;
+		margin-bottom: 4px;
+		color: #9caca7;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_6 span.prev,
+	.aior_cftheme_6 span.next {
+		font-size: 20px;
+		color: #f2f4f9;
+		font-weight: 300px;
+	}
+	.aior_cftheme_6 table .caption th {
+		font-size: 17px;
+	}
+	.aior_cftheme_7 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 20px;
+		margin-bottom: 4px;
+		color: #9caca7;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_7 span.prev,
+	.aior_cftheme_7 span.next {
+		font-size: 20px;
+		color: #f8f5f1;
+	}
+	.aior_cftheme_7 table .caption th {
+		font-size: 17px;
+	}
+	.aior_cftheme_8 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 20px;
+		margin-bottom: 4px;
+		color: #9caca7;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_8 span.prev,
+	.aior_cftheme_8 span.next {
+		font-size: 20px;
+		color: #9caca7;
+	}
+	.aior_cftheme_8 table .caption th {
+		font-size: 17px;
+	}
+	.aior_cftheme_9 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 20px;
+		margin-bottom: 4px;
+		color: #9caca7;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_9 table .caption th {
+		font-size: 17px;
+	}
+	.aior_cftheme_10 .month-wrapper table .day {
+		padding: 0px !important;
+		line-height: 40px;
+		font-size: 20px;
+		margin-bottom: 4px;
+		color: #9caca7;
+		cursor: default;
+		height: 40px;
+		width: 40px;
+	}
+	.aior_cftheme_10 table .caption th {
+		font-size: 17px;
+	}
+}
+
+.date-picker-wrapper .month-wrapper table th.month-name {
+	font-size: 24px;
+}
+
+.date-picker-wrapper .month-wrapper table .week-name {
+	font-size: 18px;
+}

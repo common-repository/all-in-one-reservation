@@ -1,0 +1,95 @@
+/* Weekly */
+.slot_weekly{
+	overflow: auto;
+}
+.slot_weekly .solcol2{
+	padding: 0 5px;
+}
+.slot_weekly ul li{
+	margin-bottom: 20px;
+	border: 1px solid #e3e3e3;
+	padding: 5px;
+	background: #f6f6f6;
+	border-radius: 5px;
+}
+.temp_s_builder {
+	background: #c0c0ca !important;
+}
+.slot_weekly ul li input{
+	margin-bottom: 10px;
+}
+.slot_weekly .slot_weekly .timepicker,
+.sm_slot .timepicker,.sm_slot .slot_space
+{ max-width: 90px;}
+/* Monthly */
+.slot_monthly ul li{
+	margin-bottom: 20px;
+	border: 1px solid #e3e3e3;
+	padding:10px;
+	background: #f6f6f6;
+	border-radius: 5px;
+}
+.slot_monthly ul li input, .slot_monthly ul li select{
+	margin-bottom: 10px;
+	margin-right: 5px !important;
+}
+.slot_monthly .temp_s_builder{ width: 230px;}
+.sm_slot{
+	padding:20px;
+	background: #fff; margin-bottom: 5px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.slot_monthly header{
+	background: #007cba;
+	color: #fff;
+	padding: 20px;
+	position: relative;
+}
+.slot_monthly header h3{
+	margin: 0;
+	color: #fff;
+}
+.slot_monthly header a{
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	position: absolute;
+	right:10px;
+	top: 30px;
+
+}
+/* Status */
+.aior_a_status_approved,.aior_a_status_pending,.aior_a_status_declined{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	padding: 8px 5px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+	border-left: 4px solid;
+}
+.aior_a_status_approved{
+	background: #21a67a;
+	border-color: #1a8a64;
+}
+.aior_a_status_pending{
+	background: #f0a92e;
+	border-color: #d49526;
+}
+.aior_a_status_declined{
+	background: #a63521;
+	border-color: #8a2b1a;
+}
+.slot_monthly .temp_s_builder .slot_desc {
+	width: 230px;
+}
+.slot_weekly .temp_s_builder .slot_desc {
+	width: 240px;
+}
+
+.aior_holiday_table  .rest-remove-button {
+	text-decoration: none;
+}

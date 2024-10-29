@@ -1,0 +1,58 @@
+{
+   "info_1":{
+      "name":"Direct Bank Transfer",
+      "url":"https://www.solwininfotech.com/product/wordpress-plugins/direct-bank-transfer-add-on-for-aior/",
+      "slug":"direct-bank-transfer",
+      "version":"1.0",
+      "description": "This plugin enable you to integrate direct bank transfer payment in All in one Reservation",
+      "author":"Solwin",
+      "author_url":"#",
+      "license":"",
+      "license_url":"",
+      "support":"",
+      "text_domain":"",
+      "thumb":"src/bank_transfer.png"
+   },
+   "info_2":{
+      "name": "Paypal",
+      "url": "https://www.solwininfotech.com/product/wordpress-plugins/stripe-payment-gateway-add-on-for-aior/",
+      "slug": "paypal",
+      "version": "1.0",
+      "description": "This plugin enable you to integrate paypal payment in All in one Reservation",
+      "author": "Solwin",
+      "author_url": "#",
+      "license": "",
+      "license_url": "",
+      "support": "",
+      "text_domain": "",
+      "thumb":"src/paypal.png"
+   },
+   "info_3":{
+      "name":"Stripe Payment",
+      "url":"https://www.solwininfotech.com/product/wordpress-plugins/stripe-payment-gateway-add-on-for-aior/",
+      "slug":"pay-stripe",
+      "version":"1.0",
+      "description":"Enable stripe payment to appointment booking in All in one Reservation",
+      "author":"Solwin",
+      "author_url":"#",
+      "license":"",
+      "license_url":"",
+      "support":"",
+      "text_domain":"",
+      "thumb":"src/stripe.png"
+   },
+   "info_4":{
+      "name":"Twilio SMS",
+      "url":"https://www.solwininfotech.com/product/wordpress-plugins/twilio-sms-add-on-for-aior/",
+      "slug":"twilio-sms",
+      "version":"1.0",
+      "description":"This plugin enable you to integrate Twilio SMS feature in All in one Reservation",
+      "author":"Solwin",
+      "author_url":"#",
+      "license":"",
+      "license_url":"",
+      "support":"",
+      "text_domain":"",
+      "thumb":"src/twilio-logo.png"
+   }
+}

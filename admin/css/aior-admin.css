@@ -1,0 +1,676 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.solrow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.solcol {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.solrow2 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.solcol2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.solrow3 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.solcol3 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+
+/* Admin Settings Form */
+
+.sol_fbuilder_area .form-group {
+	padding: 5px !important;
+	border: none
+}
+
+.sol_fbuilder_area .form_builder_field_row i.dashicons.dashicons-no {
+	display: none;
+}
+
+.sol_fbuilder_area .form_builder_field_row:hover>.sol_field_el .row.li_row i.dashicons.dashicons-no,
+.sol_fbuilder_area .form_builder_field_row .row.li_row .sol_fbuilder_column:hover i.dashicons.dashicons-no {
+	display: block;
+}
+
+.sol_fbuilder_column {
+	padding: 5px;
+	min-height: 40px;
+	border: 2px dashed #262a2b2e;
+	width: calc(100% - 10px);
+}
+
+.form-group {
+	flex: 1 1 100%;
+	padding: 12px;
+	border-top: 1px solid #e2e4e7;
+	width: calc(100% - 24px);
+}
+
+.control-label {
+	padding-bottom: 6.5px;
+	font-weight: 600;
+	color: #23282d;
+	display: block;
+}
+
+.form-control {
+	width: 100%;
+}
+
+.aior_checkbox label {
+	display: inline-block;
+	margin: 5px;
+}
+
+
+/* Admin Dashboard */
+
+.airo-m-dash-w {
+	background: #f9f9f9;
+	padding: 20px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	display: block;
+	width: 85%;
+	min-height: 130px;
+}
+
+.airo-m-dash-w p {
+	font-size: 0.938rem;
+}
+
+.airo-m-dash-w-s {
+	border: 3px solid #000;
+	border-radius: 15px;
+	padding: 10px;
+	width: 80%;
+	min-height: 58px;
+}
+
+.airo-m-dash-w-s h4 {
+	margin: 0;
+}
+
+.airo-m-dash-w-s p {
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000;
+}
+
+.aior-bubble {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	margin: 1px 0 -1px 2px;
+	padding: 0 10px;
+	min-width: 24px;
+	height: 28px;
+	border-radius: 15px;
+	background-color: #000;
+	color: #fff;
+	font-size: 12px;
+	line-height: 28px;
+	text-align: center;
+	font-weight: bold;
+	margin-left: 15px;
+	float: right;
+}
+
+.aior-bubble svg {
+	margin: 5px 0 0 5px;
+	float: right;
+}
+
+.aior-revenue-chart-cnt {
+	width: 100%;
+	max-width: 100%;
+}
+
+
+/* Admin Tab */
+
+
+/* Style the tab */
+
+ul.aior-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 -1px;
+}
+
+.aior-tabs li {
+	display: flex;
+	align-items: center;
+	border: 1px solid #e2e4e7;
+	margin: 0 8px 0 0;
+	background-color: #fbfbfc;
+	transition: background-color .1s linear, border-color .1s linear;
+}
+
+.aior-tabs li.active a,
+.aior-tabs li.active {
+	background-color: #fff;
+	border-bottom-color: #fff;
+}
+
+.aior-tabs li a {
+	text-decoration: none;
+	font-size: 1rem;
+	cursor: pointer;
+	padding: 8px 12px;
+	background: #f1f1f1;
+	color: #222;
+}
+
+
+/* Style the buttons inside the tab */
+
+
+/* Style the tab content */
+
+.aior-tab-content {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #e2e4e7;
+}
+
+.rest_clone {
+	display: none;
+}
+
+
+/* Admin Setttings Tab */
+
+.aior_admin_settings .aior-tab-content {
+	background: #fff;
+}
+
+
+/* Ui Date Picker */
+
+.post-type-sol_reservation_form #ui-datepicker-div {
+	background: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	width: 200px;
+	border: 1px solid #ddd
+}
+
+.post-type-sol_reservation_form .ui-datepicker-calendar {
+	width: 100%;
+}
+
+.post-type-sol_reservation_form .ui-datepicker-title {
+	text-align: center;
+}
+
+.post-type-sol_reservation_form .ui-datepicker-calendar .ui-datepicker-unselectable {
+	text-align: center;
+	background: #ddd;
+}
+
+.post-type-sol_reservation_form .ui-datepicker-calendar td {
+	border: 1px solid #f1f1f1;
+	text-align: center;
+}
+
+.post-type-sol_reservation_form .ui-datepicker-calendar td a {
+	text-decoration: none;
+	color: #222;
+}
+
+.post-type-sol_reservation_form .ui-datepicker-prev,
+.post-type-sol_reservation_form .ui-datepicker-next {
+	text-decoration: none;
+}
+
+.post-type-sol_reservation_form .ui-datepicker-prev {
+	float: left;
+}
+
+.post-type-sol_reservation_form .ui-datepicker-next {
+	float: right;
+}
+
+
+/* Settings Field */
+
+.aior_holiday_settings,
+.aior_holiday_table {
+	width: 100%;
+}
+
+.rest_row.solrow .solcol:first-child {
+	width: 25%;
+}
+
+
+/* Form Builder */
+
+.form_builder .rcfcol1.solcol2 .form_builder_field.ui-draggable-dragging {
+	left: 0 !important;
+	z-index: 12;
+}
+
+.rcfcol1,
+.rcfcol2,
+.rcfcol3 {
+	position: relative;
+}
+
+.rcfcol1 {
+	width: 200px;
+	background: #f5f5f5;
+}
+
+.rcfcol2,
+.rcfcol3 {
+	min-height: 100vh;
+}
+
+.rcfcol2 {
+	width: calc(100% - 210px);
+}
+
+.rcfcol3 {
+	width: calc(60% - 75px);
+	background: #f5f5f5;
+}
+
+.form_builder .fb_field_bar {
+	width: 100%;
+	padding: 8px 0;
+	margin: 0;
+	background: #2a2a38;
+}
+
+.form_builder .fb_field_bar a {
+	color: #8387b2;
+	-webkit-transition: all 0.08s linear;
+	-moz-transition: all 0.08s linear;
+	-o-transition: all 0.08s linear;
+	transition: all 0.08s linear;
+	border-radius: 4px;
+	font-size: 14px;
+	background: #1d1d28;
+	display: block;
+	padding: 8px 5px;
+}
+
+.form_builder .fb_field_bar a:hover {
+	background: #f1f1f1;
+}
+
+.form_builder .fb_field_bar span {
+	float: right;
+}
+
+.form_builder .fb_field_bar .active a {
+	cursor: default;
+	background-color: #428bca;
+	color: #fff;
+	text-shadow: 1px 1px 1px #666;
+}
+
+.form_builder .fb_field_bar .active a:hover {
+	background-color: #428bca;
+}
+
+.form_builder .fb_field_bar .text-overflow a,
+.form_builder .fb_field_bar .text-overflow .media-body {
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+
+/* Right-aligned sidebar */
+
+.form_builder .fb_field_bar.pull-right {
+	border-right: 0;
+	border-left: 1px solid #ddd;
+}
+
+.form_builder .fb_field_bar.pull-right a {
+	-webkit-border-radius: 0 4px 4px 0;
+	-moz-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+}
+
+.form_builder ul {
+	font-size: 18px;
+	display: block !important;
+}
+
+.form_builder ul li {
+	padding: 5px 10px;
+	cursor: pointer;
+	margin: 0;
+	;
+}
+
+.form_builder ul li a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.form_builder_field_row {
+	margin: 20px 10px;
+	background: #e2e6eb !important;
+}
+
+.form_builder_field {
+	padding: 10px;
+	background: #fff;
+	width: unset !important;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+	margin-bottom: 1px;
+}
+
+.form_builder .bal_builder {
+	padding: 0 !important;
+}
+
+.margin-left-5 {
+	margin-left: 5px;
+}
+
+.remove_bal_field {
+	cursor: pointer;
+	float: right;
+	margin-bottom: 5px;
+	padding: 0;
+	background: #e00b0b;
+	border: none;
+	border-radius: 50%;
+	color: #fff
+}
+
+.form-check-input {
+	margin-right: 8px;
+}
+
+.placeholder {
+	width: 100%;
+	background-color: rgb(166, 167, 235);
+	border: 1px dashed #666;
+	margin-bottom: 5px;
+}
+
+.sol_fbuilder_area {
+	width: calc(100% - 25px);
+	min-height: 50px;
+	border: 2px dashed #dae0e9;
+	padding-bottom: 50px;
+	z-index: 1;
+	margin: 10px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.fbuilder_label {
+	display: block;
+	clear: both;
+	background: #d8dde9;
+	padding: 10px;
+	width: calc(100% - 20px);
+	vertical-align: top;
+}
+
+.form-horizontal {
+	margin-top: 20px;
+}
+
+.form-horizontal .fbpreview {
+	min-height: 100px;
+	padding: 20px;
+	border: 2px solid #ddd;
+	width: calc(100% - 43px);
+}
+
+.form-group.plain_html {
+	width: 95%;
+}
+
+.form-group.plain_html textarea {
+	max-height: 200px;
+}
+
+.mt-radio {
+	display: block;
+}
+
+.mt-radio p {
+	display: inline;
+}
+
+.mt-checkbox {
+	display: block;
+}
+
+.mt-checkbox p {
+	display: inline;
+}
+
+.add_more_select {
+	background: green;
+	border-radius: 50%;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.remove_more_select {
+	border-radius: 50%;
+	background: red;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.add_more_select,
+.add_more_radio,
+.add_more_checkbox,
+.remove_more_select,
+.remove_more_radio,
+.remove_more_checkbox {
+	cursor: pointer;
+}
+
+.form_output_row .form_input_row {
+	width: 50px;
+}
+
+
+/* Nehal */
+
+.form_builder_field .row.li_row.form_output {
+	display: none;
+}
+
+.form_builder_field {
+	height: auto !important;
+}
+
+.form_builder_field .sol_field_el.active label .dashicons-arrow-down:before {
+	content: "\f142";
+}
+
+.form_builder_field .sol_field_el label {
+	vertical-align: inherit;
+}
+
+.field_radio_image {
+	margin: 0;
+	display: block;
+	clear: both;
+}
+
+.field_radio_image a {
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.field_radio_image li {
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+}
+
+.field_radio_image li {
+	display: inline-block;
+	width: 28%;
+	margin: 1%;
+}
+
+.aior_form_theme .field_radio_image li {
+	width: 45%;
+}
+
+.field_radio_image li.active {
+	border-color: tomato
+}
+
+.field_radio_image li b {
+	display: block;
+	clear: both;
+	color: #000;
+	text-decoration: none;
+}
+
+.field_radio_image input {
+	display: none;
+}
+
+.rcfcol1.solcol2 .form_builder_field .row.li_row .btn.btn-primary i::before,
+.rcfcol2.solcol2 .form_builder_field.ui-draggable-dragging .row.li_row .btn.btn-primary i::before {
+	content: "\f502";
+}
+
+.rcfcol1.solcol2 .form_builder_field.ui-draggable-dragging .row.li_row .btn.btn-primary,
+.rcfcol2.solcol2 .form_builder_field.ui-draggable-dragging .row.li_row .btn.btn-primary {
+	background-color: gainsboro;
+	border-color: red;
+	color: white;
+	position: relative !important;
+}
+
+.form_builder_field.ui-draggable-dragging {
+	background: gainsboro;
+	z-index: 25;
+}
+
+.form_builder_field .row.li_row.form_output,
+.form_builder_field.ui-draggable-dragging .row.li_row.form_output,
+.sol_field_el .row.li_row .solcol,
+.form_builder_field.ui-draggable-dragging .sol_field_el .row.li_row .solcol {
+	display: none
+}
+
+.form_builder_field {
+	height: 30px;
+}
+
+.form_builder_field {
+	height: auto !important
+}
+
+
+/* Shortcode Container */
+
+.sol_tag_cnt {
+	max-width: 70%;
+}
+
+.sol_tag_wrap {
+	background: #ffffff none repeat scroll 0 0;
+	border-left: 4px solid #00a0d2;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	margin-top: 0.5em;
+	padding: 7px;
+}
+
+.sol_tag_wrap .tagname {
+	font-weight: bold;
+	letter-spacing: 1px;
+	min-width: 250px;
+	padding: 3px;
+	display: inline-block;
+}
+
+.form-group.aior_slot_type label:nth-child(2) {
+	margin-right: 15px;
+}
+
+.aior_add_monthly_slot.button.button-primary.button-large {
+	margin-bottom: 15px;
+}
+
+.admin_email_id .solcol input,
+.admin_email_cc_id .solcol input {
+	margin-right: 350px;
+}
+
+.form-group.solrow.aior_enable_email .solcol:last-child {
+	margin-right: 200px;
+}
+
+.admin_mobile_no .solcol input {
+	margin-right: 150px;
+}
+
+.form_output .form-check {
+	padding: 0 6px;
+}
+
+.form-group.solrow.email_request .solcol:last-child {
+	margin-left: 290px;
+	margin-right: auto;
+}
+
+#booking_form_theme li img {
+	width: 100%;
+}
+.aior_add_on_action_btn {
+	opacity: 0.8;
+}
+.aior_success_msg {
+    font-size: 18px;
+    padding: 15px;
+    color: #14c414;
+	display: none;
+}

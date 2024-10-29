@@ -1,0 +1,58 @@
+.swal2-container.swal2-backdrop-show{
+   background:#DDE9F5;
+}
+
+.swal2-container.swal2-center > .swal2-popup{
+   background: #fff;
+   border-radius: 30px;
+}
+.solcol label{ font-size: 1.1rem;}
+.solcol input[type="text"],
+.solcol input[type="email"],
+.solcol input[type="number"],
+.solcol input[type="tel"],
+.solcol input[type="date"],
+.solcol textarea {
+	border:2px solid #EDEDF2;
+	border-radius: 5px !important;
+	padding: 10px 15px;
+}
+
+.solcol input[type="text"]:hover,
+.solcol input[type="email"]:hover,
+.solcol input[type="number"]:hover,
+.solcol input[type="tel"],
+.solcol input[type="date"]:hover,
+.solcol textarea:hover,
+.solcol input[type="text"]:focus,
+.solcol input[type="email"]:focus,
+.solcol input[type="number"]:focus,
+.solcol input[type="tel"],
+.solcol input[type="date"]:focus,
+.solcol textarea:focus{
+	border:2px solid #333;
+	/* box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%); */
+	outline: none;
+}
+.solcol input[type="submit"]{
+	border-radius: 5px !important;
+	background: #0d6efd !important;
+	border-color: #0d6efd;
+	color: #fff;
+	margin-left: auto;
+}
+.solcol input[type="submit"]:hover,
+.solcol input[type="submit"]:focus{
+   color: #fff;
+	background-color: #8693BC;
+	border-color: #8693BC;
+	/* box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%); */
+}
+.swal2-popup.swal2-modal {
+	max-width: 750px;
+	width: 100% !important;
+}
+label.error {
+	color: red;
+	margin-bottom: 0px;
+}

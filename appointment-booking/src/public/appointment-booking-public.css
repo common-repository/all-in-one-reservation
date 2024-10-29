@@ -1,0 +1,553 @@
+.aior_fomr_style_1 .date-picker-wrapper .month-wrapper table {
+	width: 100%;
+}
+
+.sol_ap_s_date {
+	color: #000;
+	font-size: 18px;
+}
+
+.so_ap_s_cnt {
+	background: #fff;
+	border: 1px solid #f1f1f1;
+}
+
+.sol_ap_s_date header {
+	padding: 20px 0;
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.sol_ap_s_date .solrow {
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
+.sol_ap_s_date .stitle {
+	line-height: 18px;
+	text-align: left;
+	opacity: 1;
+	border: none;
+}
+
+.sol_ap_s_date .sdesc {
+	font-size: 15px;
+	padding: 10px 0;
+	text-align: left;
+	color: #555;
+}
+
+.solacol_2 span {
+	font-size: 16px;
+}
+
+.solacol_2 span {
+	display: inline;
+}
+
+.solacol_2 {
+	min-width: 150px;
+}
+
+.solarowhead div {
+	font-weight: bold;
+}
+
+.book-apppointment-now {
+	text-decoration: none !important;
+	display: inline-block;
+	border: 1px solid #ddd;
+	padding: 10px 20px;
+	background: #ddd;
+	color: #6e6e6e !important;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.book-apppointment-now:hover {
+	background: #9a0fbf;
+	color: #fff !important;
+}
+
+.aior_reservation_form .solcol label {
+	float: left;
+}
+
+#aior-ab-c-cnt .date-picker-wrapper.single-date {
+	width: 100%;
+}
+
+.calander-container .apt-timeslot {
+	box-sizing: border-box;
+	line-height: 1.8;
+	color: #888;
+	border-top: 1px solid #ddd;
+}
+
+.calander-container {
+	border-radius: 3px;
+	color: #000;
+	background: #fff;
+	box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+	padding: 30px 35px 10px;
+}
+
+@media only screen and (max-width:710px) {
+	.sol_ap_s_date header {
+		padding: 20px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 15px;
+	}
+	.sol_ap_s_date .solrow {
+		border-bottom: 1px solid #ccc;
+		padding: 10px;
+		margin: -5px;
+	}
+	.solacol_2 {
+		min-width: 135px;
+	}
+	.solacol_2 span {
+		font-size: 13px;
+	}
+	.book-apppointment-now {
+		text-decoration: none !important;
+		display: inline-block;
+		border: 1px solid #ddd;
+		padding: 8px 8px;
+		background: #c2b0b0;
+		color: #000000 !important;
+		border-radius: 5px;
+		font-size: 10px;
+		height: 25px;
+		width: 25px;
+	}
+	.aior_reservation_form .solcol label {
+		float: left;
+		font-size: 16px;
+	}
+}
+
+.aior_cftheme_5 .so_ap_s_cnt {
+	background: #393939 !important;
+	border: 2px solid #393939 !important;
+	border-radius: 20px;
+	margin: 0px 25px;
+}
+
+.aior_cftheme_5 .sol_ap_s_date .solrow {
+	border-bottom: 1px solid #535252;
+	padding: 10px;
+	color: #fff !important;
+}
+
+.aior_cftheme_5 .sol_ap_s_date .solrow:last-child {
+	border-radius: inherit;
+	border: 0px !important;
+}
+
+.aior_cftheme_5 .book-apppointment-now {
+	text-decoration: none !important;
+	display: inline-block;
+	border: none;
+	padding: 15px 11px;
+	background: #ddd;
+	color: #6e6e6e !important;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.aior_cftheme_5 .solcol.solacol_1:nth-child(1),
+.aior_cftheme_5 .solcol.solacol_2:nth-child(2) {
+	padding: 0px !important;
+}
+
+.aior_cftheme_6 .so_ap_s_cnt {
+	background: #393939 !important;
+	border: 2px solid #393939 !important;
+	border-radius: 20px;
+	margin: 0px 25px;
+}
+
+.aior_cftheme_6 .sol_ap_s_date .solrow {
+	border-bottom: 1px solid #535252;
+	padding: 10px;
+	color: #fff !important;
+}
+
+.aior_cftheme_6 .sol_ap_s_date .solrow:last-child {
+	border-radius: inherit;
+	border: 0px !important;
+}
+
+.aior_cftheme_6 .book-apppointment-now {
+	text-decoration: none !important;
+	display: inline-block;
+	border: none;
+	padding: 15px 11px;
+	background: #ddd;
+	color: #6e6e6e !important;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.aior_cftheme_6 .solcol.solacol_1:nth-child(1),
+.aior_cftheme_6 .solcol.solacol_2:nth-child(2) {
+	padding: 0px !important;
+}
+
+.aior_cftheme_7 .so_ap_s_cnt {
+	background: #393939 !important;
+	border: 2px solid #393939 !important;
+	border-radius: 20px;
+	margin: 0px 25px;
+}
+
+.aior_cftheme_7 .sol_ap_s_date .solrow {
+	border-bottom: 1px solid #535252;
+	padding: 10px;
+	color: #fff !important;
+}
+
+.aior_cftheme_7 .sol_ap_s_date .solrow:last-child {
+	border-radius: inherit;
+	border: 0px !important;
+}
+
+.aior_cftheme_7 .book-apppointment-now {
+	text-decoration: none !important;
+	display: inline-block;
+	border: none;
+	padding: 15px 11px;
+	background: #ddd;
+	color: #6e6e6e !important;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.aior_cftheme_7 .solcol.solacol_1:nth-child(1),
+.aior_cftheme_7 .solcol.solacol_2:nth-child(2) {
+	padding: 0px !important;
+}
+
+.aior_cftheme_8 .so_ap_s_cnt {
+	background: #f1f8f6 !important;
+	border: 2px solid #f1f8f6 !important;
+	border-radius: 20px;
+	margin: 0px 25px;
+}
+
+.aior_cftheme_8 .sol_ap_s_date .solrow {
+	border-bottom: 1px solid #ccf1e7;
+	padding: 10px;
+	color: #000 !important;
+}
+
+.aior_cftheme_8 .sol_ap_s_date .solrow:last-child {
+	border-radius: inherit;
+	border: 0px !important;
+}
+
+.aior_cftheme_8 .book-apppointment-now {
+	text-decoration: none !important;
+	display: inline-block;
+	border: none;
+	padding: 15px 11px;
+	background: #ddd;
+	color: #6e6e6e !important;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.aior_cftheme_8 .solarowhead div {
+	font-weight: bold;
+	color: #3fd5b7 !important;
+}
+
+.aior_cftheme_8 .so_ap_s_cnt header strong {
+	color: #3fd5b7;
+}
+
+.aior_cftheme_8 .solcol.solacol_1:nth-child(1),
+.aior_cftheme_8 .solcol.solacol_2:nth-child(2) {
+	padding: 0px !important;
+}
+
+.aior_cftheme_9 .so_ap_s_cnt {
+	background: #f2f4f9 !important;
+	border: 2px solid #f2f4f9 !important;
+	border-radius: 20px;
+	margin: 0px 25px;
+}
+
+.aior_cftheme_9 .sol_ap_s_date .solrow {
+	border-bottom: 1px solid #d7e1f8;
+	padding: 10px;
+	color: #000 !important;
+}
+
+.aior_cftheme_9 .sol_ap_s_date .solrow:last-child {
+	border-radius: inherit;
+	border: 0px !important;
+}
+
+.aior_cftheme_9 .book-apppointment-now {
+	text-decoration: none !important;
+	display: inline-block;
+	border: none;
+	padding: 15px 11px;
+	background: #ddd;
+	color: #6e6e6e !important;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.aior_cftheme_9 .solarowhead div {
+	font-weight: bold;
+	color: #3f4ed5 !important;
+}
+
+.aior_cftheme_9 .so_ap_s_cnt header strong {
+	color: #3f4ed5;
+}
+
+.aior_cftheme_9 .solcol.solacol_1:nth-child(1),
+.aior_cftheme_9 .solcol.solacol_2:nth-child(2) {
+	padding: 0px !important;
+}
+
+.aior_cftheme_10 .so_ap_s_cnt {
+	background: #f8f5f1 !important;
+	border: 2px solid #f8f5f1 !important;
+	border-radius: 20px;
+	margin: 0px 25px;
+}
+
+.aior_cftheme_10 .sol_ap_s_date .solrow {
+	border-bottom: 1px solid #e6dace;
+	padding: 10px;
+	color: #000 !important;
+}
+
+.aior_cftheme_10 .sol_ap_s_date .solrow:last-child {
+	border-radius: inherit;
+	border: 0px !important;
+}
+
+.aior_cftheme_10 .book-apppointment-now {
+	text-decoration: none !important;
+	display: inline-block;
+	border: none;
+	padding: 15px 11px;
+	background: #ddd;
+	color: #6e6e6e !important;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.aior_cftheme_10 .solarowhead div {
+	font-weight: bold;
+	color: #d1852e !important;
+}
+
+.aior_cftheme_10 .so_ap_s_cnt header strong {
+	color: #d1852e;
+}
+
+.aior_cftheme_10 .solcol.solacol_1:nth-child(1),
+.aior_cftheme_10 .solcol.solacol_2:nth-child(2) {
+	padding: 0px !important;
+}
+
+
+/*for responsive*/
+
+@media only screen and (max-width: 710px) {
+	.sol_ap_s_date header {
+		padding: 20px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 15px;
+	}
+	.sol_ap_s_date .solrow {
+		border-bottom: 1px solid #ccc;
+		padding: 10px;
+		margin: -5px;
+	}
+	.solacol_2 {
+		min-width: 135px;
+	}
+	.solacol_2 span {
+		font-size: 13px;
+	}
+	.book-apppointment-now {
+		text-decoration: none !important;
+		display: inline-block;
+		border: 1px solid #ddd;
+		padding: 8px 8px;
+		background: #c2b0b0;
+		color: #000000 !important;
+		border-radius: 5px;
+		font-size: 10px;
+		height: 25px;
+		width: 25px;
+	}
+	.aior_reservation_form .solcol label {
+		float: left;
+		font-size: 16px;
+	}
+	.aior_cftheme_5 .sol_ap_s_date header {
+		padding: 20px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 13px !important;
+	}
+	.aior_cftheme_5 .solacol_2 {
+		min-width: 82px;
+	}
+	.aior_cftheme_5 .book-apppointment-now {
+		text-decoration: none !important;
+		display: inline-block;
+		border: none;
+		padding: 8px 8px;
+		background-image: linear-gradient(#38d4a5, #3fd5b7) !important;
+		color: #fff !important;
+		border-radius: 5px;
+		font-size: 10px;
+		width: 25px;
+		height: 25px;
+	}
+	.aior_cftheme_6 .sol_ap_s_date header {
+		padding: 20px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 13px !important;
+	}
+	.aior_cftheme_6 .solacol_2 {
+		min-width: 82px;
+	}
+	.aior_cftheme_6 .book-apppointment-now {
+		text-decoration: none !important;
+		display: inline-block;
+		border: none;
+		padding: 8px 8px;
+		background: linear-gradient(#1727b5, #3f4ed5) !important;
+		color: #fff !important;
+		border-radius: 5px;
+		font-size: 10px;
+		width: 25px;
+		height: 25px;
+	}
+	.aior_cftheme_7 .sol_ap_s_date header {
+		padding: 20px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 13px !important;
+	}
+	.aior_cftheme_7 .solacol_2 {
+		min-width: 82px;
+	}
+	.aior_cftheme_7 .book-apppointment-now {
+		text-decoration: none !important;
+		display: inline-block;
+		border: none;
+		padding: 8px 8px;
+		background: linear-gradient(#c98c1b, #d1852e) !important;
+		color: #fff !important;
+		border-radius: 5px;
+		font-size: 10px;
+		width: 25px;
+		height: 25px;
+	}
+	.aior_cftheme_8 .sol_ap_s_date header {
+		padding: 20px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 13px !important;
+	}
+	.aior_cftheme_8 .solacol_2 {
+		min-width: 82px;
+	}
+	.aior_cftheme_8 .book-apppointment-now {
+		text-decoration: none !important;
+		display: inline-block;
+		border: none;
+		padding: 8px 8px;
+		background: linear-gradient(#38d4a5, #3fd5b7) !important;
+		color: #fff !important;
+		border-radius: 5px;
+		font-size: 10px;
+		width: 25px;
+		height: 25px;
+	}
+	.aior_cftheme_9 .sol_ap_s_date header {
+		padding: 20px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 13px !important;
+	}
+	.aior_cftheme_9 .solacol_2 {
+		min-width: 82px;
+	}
+	.aior_cftheme_9 .book-apppointment-now {
+		text-decoration: none !important;
+		display: inline-block;
+		border: none;
+		padding: 8px 8px;
+		background: linear-gradient(#1727b5, #3f4ed5) !important;
+		color: #fff !important;
+		border-radius: 5px;
+		font-size: 10px;
+		width: 25px;
+		height: 25px;
+	}
+	.aior_cftheme_10 .sol_ap_s_date header {
+		padding: 20px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		text-align: center;
+		font-size: 13px !important;
+	}
+	.aior_cftheme_10 .solacol_2 {
+		min-width: 82px;
+	}
+	.aior_cftheme_10 .book-apppointment-now {
+		text-decoration: none !important;
+		display: inline-block;
+		border: none;
+		padding: 8px 8px;
+		background: linear-gradient(#c98c1b, #d1852e) !important;
+		color: #fff !important;
+		border-radius: 5px;
+		font-size: 10px;
+		width: 25px;
+		height: 25px;
+	}
+}
+select#service_name {
+	margin-bottom: 20px;
+	padding: 7px;
+	border-radius: 10px;
+	border: 1px solid #1f56ba;
+	background: radial-gradient(circle, rgb(31, 86, 186) 0%, rgb(71, 151, 247) 100%);
+}
+.book-apppointment-now {
+	color: #FFF !important;
+}

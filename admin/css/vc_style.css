@@ -1,0 +1,22 @@
+.aior_icon.vc_element-icon {
+    background-image: url('../../src/logo-1.png');
+}
+
+li.jsn-item[data-value="aior_appointment_widget"] .wr-icon-formfields.wr-icon-widget:before{
+    background-image: url('../../src/logo-1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+
+#addElementModal .element-item[data-element-type="fsn_aior"] i {
+    background-image: url('../../src/logo-1.png');
+    background-size: 24px 24px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+}

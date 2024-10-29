@@ -1,0 +1,16 @@
+{
+	"info": {
+		"name": "Appointment Booking",
+		"url": "#",
+		"slug": "appointment-booking",
+		"version": "1.0",
+		"description": "To book any kind of appointment",
+		"author": "Solwin",
+		"author_url": "#",
+		"license": "",
+		"license_url": "",
+		"support": "",
+		"text_domain": "",
+		"thumb":"src/calendar.png"
+	}
+}

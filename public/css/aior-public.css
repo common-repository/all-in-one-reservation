@@ -1,0 +1,461 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.solrow {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.solcol {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: calc(100% - 10px);
+}
+
+.solcol .aior_fomr_filed {
+	width: 100%;
+	clear: both;
+}
+
+.solcol .form-group {
+	width: 100%;
+}
+
+.aior_reservation_form .solcol {
+	padding: 10px;
+}
+
+.aior_form_err {
+	color: red;
+	font-size: 18px;
+}
+
+
+/* Payment List */
+
+.aior_paymentg_list {
+	padding: 0;
+}
+
+.aior_paymentg_list li {
+	list-style: none;
+}
+
+.aior_pay_accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 18px;
+	transition: 0.4s;
+	font-weight: bold;
+}
+
+.aior_pay_accordion:hover {
+	background-color: #ccc;
+}
+
+.aior_pay_panel {
+	padding: 20px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+}
+
+
+/* Star Rating */
+
+.aior-comments-rating {
+	border: none;
+	padding: 0;
+	margin-left: 0;
+}
+
+.aior-comments-rating label {
+	display: inline-block;
+}
+
+.aior-rating-container {
+	font-size: 0;
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+
+.aior-rating-container * {
+	font-size: 1.4rem;
+}
+
+.aior-rating-container>input {
+	display: none;
+}
+
+.aior-rating-container>input+label {
+	/* only enough room for the star */
+	font-family: 'dashicons';
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 9999px;
+	width: 1em;
+	white-space: nowrap;
+	cursor: pointer;
+	margin: 0;
+}
+
+.aior-rating-container>input+label:before {
+	display: inline-block;
+	text-indent: -9999px;
+	content: "\f154";
+	color: #888;
+}
+
+.aior-rating-container>input:checked~label:before,
+.aior-rating-container>input+label:hover~label:before,
+.aior-rating-container>input+label:hover:before {
+	content: "\f155";
+	color: #e52;
+	text-shadow: 0 0 1px #333;
+}
+
+.aior-rating-container>.star-cb-clear+label {
+	text-indent: -9999px;
+	width: .5em;
+	margin-left: -.5em;
+}
+
+.aior-rating-container>.star-cb-clear+label:before {
+	width: .5em;
+}
+
+.aior-rating-container:hover>input+label:before {
+	content: "\f154";
+	color: #888;
+	text-shadow: none;
+}
+
+.aior-rating-container:hover>input+label:hover~label:before,
+.aior-rating-container:hover>input+label:hover:before {
+	content: "\f155";
+	color: #e52;
+	text-shadow: 0 0 1px #333;
+}
+
+.comment-respond .aior-rating-container>.star-cb-clear+label,
+.comment-respond .aior-rating-container>input+label:before {
+	text-indent: 9999px;
+}
+
+.comment-respond .aior-rating-container>input+label {
+	text-indent: -9999px;
+}
+
+
+/* tweak sweetaler2 width issue */
+
+.swal2-container.swal2-center>.swal2-popup {
+	width: auto;
+}
+
+
+/* Form Style 1*/
+
+.aior_fomr_style_1 {
+	display: block;
+	clear: both;
+	width: 100%;
+}
+
+
+/* Social Share */
+
+.social-buttons {
+	list-style-type: none;
+	box-sizing: border-box;
+	*zoom: 1;
+	padding: 0;
+}
+
+.social-buttons:before,
+.social-buttons:after {
+	box-sizing: border-box;
+}
+
+.social-buttons:before,
+.social-buttons:after {
+	content: " ";
+	display: table;
+	line-height: 0;
+}
+
+.social-buttons:after {
+	clear: both;
+}
+
+.button__share {
+	float: left;
+	background-color: #888;
+	margin-right: .7em;
+	margin-bottom: .7em;
+	border-radius: 4px;
+}
+
+.button__share:last-child {
+	margin-right: 0;
+}
+
+.button__share:hover {
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	-webkit-opacity: 0.8;
+	opacity: 0.8;
+	-ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=80);
+	filter: alpha(opacity=80);
+}
+
+.button__share a {
+	color: #fff;
+	font-family: Arial, Helvetica, -apple-system, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 1.33;
+	text-decoration: none;
+	padding: .35em .7em;
+	display: inline-block;
+}
+
+.button__share svg {
+	fill: #fff;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.button__share--facebook {
+	background-color: #3b5998;
+}
+
+.button__share--googleplus {
+	background-color: #dc4e41;
+}
+
+.button__share--twitter {
+	background-color: #55acee;
+}
+
+.button__share--linkedin {
+	background-color: #0077b5;
+}
+
+.button__share--reddit {
+	background-color: #ff4500;
+}
+
+.button__share--hackernews {
+	background-color: #ff6600;
+}
+
+.button__share--buffer {
+	background-color: #323b43;
+}
+
+.button__share--digg {
+	background-color: #000000
+}
+
+.button__share--tumblr {
+	background-color: #35465c
+}
+
+.button__share--stumbleupon {
+	background-color: #eb4924;
+}
+
+.button__share--delicious {
+	background-color: #3399ff;
+}
+
+.button__share--evernote {
+	background-color: #7ac142;
+}
+
+.button__share--wordpress {
+	background-color: #21759b;
+}
+
+.button__share--pocket {
+	background-color: #ef4056;
+}
+
+.button__share--pinterest {
+	background-color: #bd081c
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	background: #485563;
+	background: -webkit-linear-gradient(to right, #485563, #29323c);
+	background: linear-gradient(to right, #485563, #29323c);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 10px;
+	font-size: 0.599rem;
+	position: absolute;
+	z-index: 1;
+	width: 150px;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.aior-cod-pay-form {
+	width: 100%;
+	padding: 20px;
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: #FFF;
+}
+
+.aior-cod-pay-form fieldset {
+	border: 1px solid #fff;
+	padding: 15px;
+	border-radius: 6px;
+}
+
+.aior-cod-pay-form legend {
+	margin: 0 auto;
+	padding: 0 10px;
+	text-align: center;
+	font-weight: 500;
+	color: #FFF;
+}
+
+.aior-cod-pay-form .aior_cod_pay_btn {
+	display: block;
+	width: 100%;
+	margin: 20px 0 0;
+	background: linear-gradient(#5865ab, #3a4790);
+	color: #FFF !important;
+	border-radius: 6px;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 20px;
+	float: right;
+	margin-top: 10px
+}
+
+.aior-cod-pay-form .aior_cod_pay_btn:active {
+	background-color: #cdd0f8;
+}
+
+.aior-cod-pay-form .form-row>label {
+	font-weight: 700;
+}
+
+.aior-cod-pay-form .form-row>b {
+	font-size: 45px;
+}
+
+.aior-cod-pay-form .cod_image {
+	float: right;
+	height: 80px;
+	margin-top: -20px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width:710px) {
+	.solrow {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		font-size: 12px;
+	}
+	.solcol {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: calc(100% - 10px);
+	}
+	.solcol .aior_fomr_filed {
+		width: 81%;
+		font-size: 15px;
+		clear: both;
+	}
+	.swal2-html-container .solrow {
+		display: block;
+		align-items: flex-start;
+		justify-content: space-between;
+		font-size: 12px;
+	}
+	.swal2-html-container .solcol .aior_fomr_filed {
+		width: 100%;
+		font-size: 15px;
+		clear: both;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.aior-cod-pay-form .form-row {
+		margin-top: 80px;
+	}
+}
+
+
+/*
+* Payment Page CSS
+*/
+
+.aior_paymentg_list li:first-child button {
+	border-radius: 15px 15px 0 0;
+}
+
+.aior_paymentg_list li:last-child button {
+	border-radius: 0 0 15px 15px;
+}
+
+.aior_paymentg_list li:last-child button.active {
+	border-radius: 0;
+}
+
+.aior_paymentg_list li button {
+	background: #f6f6f6 !important;
+	color: #393939 !important;
+}
+
+.aior_paymentg_list li button.active {
+	background: #333a60 !important;
+	color: #FFF !important;
+}
+
+.restBooknow.aior_book_now {
+	padding: 10px;
+	cursor: pointer;
+}
+.aior_comments .aior_comment_field {
+	display: grid;
+	font-size: 20px;
+}
+.aior_comments #submit_aior_comment {
+	background: #39F;
+	color: #FFF;
+	border: 1px solid #39F;
+	padding: 10px 30px;
+	font-size: 20px;
+	cursor: pointer;
+}

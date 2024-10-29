@@ -1,0 +1,93 @@
+.swal2-container.swal2-backdrop-show {
+	background: #070708;
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+	background: #151515;
+	border-radius: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.solcol input[type="text"],
+.solcol input[type="email"],
+.solcol input[type="number"],
+.solcol input[type="tel"],
+.solcol input[type="date"],
+.solcol textarea {
+	border: 2px solid #ffffffb3;
+	border-radius: 10px;
+	outline: none;
+	background: #393939;
+	color: #a3a3a3;
+	padding: 10px 15px;
+}
+
+.solcol input[type="text"]:hover,
+.solcol input[type="email"]:hover,
+.solcol input[type="number"]:hover,
+.solcol input[type="tel"],
+.solcol input[type="date"]:hover,
+.solcol textarea:hover,
+.solcol input[type="text"]:focus,
+.solcol input[type="email"]:focus,
+.solcol input[type="number"]:focus,
+.solcol input[type="tel"],
+.solcol input[type="date"]:focus,
+.solcol textarea:focus {
+	background: #070708;
+}
+
+.solcol input[type="submit"] {
+	border-radius: 15px;
+	background-image: linear-gradient(#1727b5, #3f4ed5) !important;
+	outline: 0;
+	color: #fff !important;
+	border: 2px solid #1727b5;
+	/* margin-left: auto; */
+	margin-right: auto;
+	padding: 15px 45px;
+	font-weight: bolder;
+}
+
+.solcol input[type="submit"]:hover {
+	background: #fff !important;
+	border: 2px solid #070708;
+	color: #070708 !important;
+}
+
+.solcol label {
+	color: #fffffff2;
+	font-weight: 400;
+	padding: 0px 0px 6px 0px;
+}
+
+.swal2-container h2#swal2-title {
+	color: #fff;
+	font-size: 35px;
+	padding: 31px;
+}
+
+.swal2-popup.swal2-modal {
+	max-width: 750px;
+	width: 100% !important;
+}
+
+label.error {
+	color: red;
+	margin-bottom: 0px;
+}
+
+.solrow .solcol:nth-child(2) {
+	padding: 10px 20px;
+}
+
+@media only screen and (max-width:710px) {
+	.solcol input[type="submit"] {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.solrow .solcol:nth-child(2) {
+		padding: 10px;
+	}
+}
